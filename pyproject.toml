@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wheelwatch"
+version = "0.1.0"
+description = "Offline Python wheel integrity and install-time risk inspection"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "haoyuanxue26-star"}]
+dependencies = []
+
+[project.scripts]
+wheelwatch = "wheelwatch.__main__:main"
+
+[project.urls]
+Repository = "https://github.com/haoyuanxue26-star/wheelwatch"
+Issues = "https://github.com/haoyuanxue26-star/wheelwatch/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
